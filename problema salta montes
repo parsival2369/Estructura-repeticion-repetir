@@ -1,0 +1,27 @@
+Algoritmo Saltamontes_Pozo
+    // Definición de variables
+    Definir altura_pozo, altura_actual, dias Como Entero
+    
+    // Inicialización de variables
+    altura_pozo <- 50
+    altura_actual <- 0
+    dias <- 0
+    
+    // Proceso iterativo para simular los días hasta salir del pozo
+    Repetir
+        // Durante el día el saltamontes sube 3 metros
+        altura_actual <- altura_actual + 3
+        
+        // Verificar si el saltamontes ha alcanzado o superado la altura del pozo
+        Si altura_actual >= altura_pozo Entonces
+            Escribir "El saltamontes ha salido del pozo en ", dias, " días."
+        Sino
+            // Durante la noche el saltamontes cae 2 metros
+            altura_actual <- altura_actual - 2
+            
+            // Incrementar el contador de días
+            dias <- dias + 1
+        FinSi
+    Hasta Que altura_actual >= altura_pozo
+    
+FinAlgoritmo
