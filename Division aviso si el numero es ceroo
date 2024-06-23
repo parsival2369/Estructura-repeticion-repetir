@@ -1,0 +1,20 @@
+Algoritmo Division_Seguro
+    Definir numerador, denominador, resultado Como Real
+    
+    Escribir "Ingrese el numerador:"
+    Leer numerador
+    
+    Repetir
+        Escribir "Ingrese el denominador (debe ser distinto de cero):"
+        Leer denominador
+        
+        Si denominador = 0 Entonces
+            Escribir "Error: El denominador no puede ser cero. Intente de nuevo."
+        FinSi
+    Hasta Que denominador <> 0
+    
+    resultado <- numerador / denominador
+    
+    Escribir "El resultado de la división ", numerador, " / ", denominador, " es: ", resultado
+    
+FinAlgoritmo
