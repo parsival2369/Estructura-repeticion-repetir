@@ -1,0 +1,18 @@
+Algoritmo Contador_Descendente
+    Definir inicio, fin, i Como Entero
+    
+    Escribir "Ingrese el punto de inicio:"
+    Leer inicio
+    
+    Escribir "Ingrese el punto de finalización:"
+    Leer fin
+    
+    Repetir
+        Escribir inicio
+        inicio <- inicio - 1
+    Hasta Que inicio <= fin  
+    
+    Escribir fin  
+    
+
+FinAlgoritmo
