@@ -1,0 +1,17 @@
+Algoritmo Verificar_Clave
+    Definir clave_ingresada Como Cadena
+    Definir clave_correcta Como Cadena
+    clave_correcta <- "IntroWeb2024"
+    
+    Repetir
+        Escribir "Ingrese la clave de acceso:"
+        Leer clave_ingresada
+        
+        Si clave_ingresada = clave_correcta Entonces
+            Escribir "Acceso logrado. Bienvenido."
+        Sino
+            Escribir "Clave incorrecta. Intente de nuevo."
+        FinSi
+    Hasta Que clave_ingresada = clave_correcta
+    
+FinAlgoritmo
